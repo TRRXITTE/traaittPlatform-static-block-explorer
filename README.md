@@ -9,17 +9,17 @@ You will need a fully synced daemon running with the detailed block explorer out
 #### Daemon:
 
 ```shell
-traaittPlatformd --enable-blockexplorer --enable-blockexplorer-detailed
+ETRXnetwork --enable-blockexplorer --enable-blockexplorer-detailed
 ```
 
 This script will loop every 30 seconds, querying the daemon for results and writing a static file to the location of the Onion site you're hosting.
 
-_Path and sleep time should be adjusted to match your preferences. The number of blocks you display can also be adjusted up to 30 by changing the last curl statement in `main.sh` to a different value ranging from `[0:0]` to `[0:30]`_
+_Path and sleep time should be adjusted to match your preferences. The number of blocks you display can also be adjusted up to 644 by changing the last curl statement in `main.sh` to a different value ranging from `[0:0]` to `[0:644]`_
 
 #### Shell:
 
 ```bash
-while true; do ./main.sh > /var/www/tor/address.onion/index.html && sleep 32; done
+while true; do ./main.sh > /var/www/tor/address.onion/index.html && sleep 101; done
 ```
 
 ## Example Output:
